@@ -21,7 +21,7 @@ public class CountryList: UIViewController, UITableViewDelegate, UITableViewData
     
     open weak var delegate: CountryListDelegate?
     
-    var countryList: [Country] {
+    open var countryList: [Country] {
         let countries = Countries()
         let countryList = countries.countries
         return countryList
